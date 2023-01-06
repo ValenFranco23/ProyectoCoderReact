@@ -100,7 +100,7 @@ export default function Create() {
         <div style={inputStyles.container}>
           <div style={inputStyles.title}>Cover</div>
           <input type="file" name="cover" onChange={handleOnChangeFile} />
-          <div>{ cover <img src={cover} width="200" /> : ""}</div>
+          <div>{cover ? <img src={cover} width="200" /> : ""}</div>
         </div>
 
         <div style={inputStyles.container}>
