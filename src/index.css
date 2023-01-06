@@ -2,12 +2,3 @@ body {
   margin: 0;
   font-family: "Segoe UI", "Roboto", "Oxygen",
 }
-
-code {
-  font-family:  "Courier New", monospace;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
