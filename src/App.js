@@ -2,6 +2,7 @@ import Index from "./pages/index";
 import Create from "./pages/create";
 import View from "./pages/view";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Store from "./store/store";
 
 function App() {

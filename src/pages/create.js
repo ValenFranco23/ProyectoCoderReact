@@ -51,6 +51,7 @@ export default function Create() {
     e.preventDefault();
 
     const newBook = {
+      id: crypto.randomUUID(),
       titulo,
       autor,
       cover,
@@ -100,7 +101,7 @@ export default function Create() {
         <div style={inputStyles.container}>
           <div style={inputStyles.title}>Cover</div>
           <input type="file" name="cover" onChange={handleOnChangeFile} />
-          <div>{cover ? <img src={cover} width="200" /> : ""}</div>
+          <div>{!!cover ? <img src={cover} width="200" /> : ""}</div>
         </div>
 
         <div style={inputStyles.container}>
@@ -130,9 +131,12 @@ export default function Create() {
           value="Registrar libro"
           style={{
             padding: "15px 20px",
+            minWidth: "200px",
             border: "none",
+            borderRadius: "5px",
             backgroundColor: "#1e9638",
             color: "white",
+            fontWeigth: "bolder",
             fontSize: "18px",
           }}
         />
